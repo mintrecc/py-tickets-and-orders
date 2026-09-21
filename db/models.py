@@ -58,7 +58,7 @@ class Order(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
         "User",
-        related_name="users_order",
+        related_name="orders",
         on_delete=models.CASCADE
     )
 
